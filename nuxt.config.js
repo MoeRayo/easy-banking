@@ -23,14 +23,24 @@ export default {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap',
       },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css',
+      },
     ],
+    script: [{ src: 'static/js/script.js' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['tachyons/css/tachyons.css'],
+  css: ['tachyons/css/tachyons.css', 'assets/css/style.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    // {
+    //   src: '~plugins/js/script.js',
+    //   ssr: false,
+    // },
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
